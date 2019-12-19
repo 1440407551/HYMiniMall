@@ -16,3 +16,6 @@
   titles="{{titles}}"
   bind:tabclick="handleTabClick"
  />
+
+ <!-- 5.展示商品数据 -->
+ <w-goods goods="{{goods[currentType].list}}" />

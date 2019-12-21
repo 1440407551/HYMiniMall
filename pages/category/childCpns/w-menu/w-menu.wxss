@@ -1,0 +1,20 @@
+/* components/w-menu/w-menu.wxss */
+
+.menu {
+  height: 100%;
+  background: #f6f6f6;
+  font-size: 28rpx;
+}
+
+.menu-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.active {
+  color: #ff5777;
+  background: #fff;
+  border-left: #ff5777 solid 6rpx;
+  font-weight: 700;
+}

@@ -4,6 +4,8 @@ import {
   getGoodsData
 } from '../../service/home.js'
 
+const TOP_DISTANCE = 1000;
+
 const types = ['pop', 'new', 'sell']
 
 Page({
@@ -21,7 +23,9 @@ Page({
       'sell': { page: 0, list: [] },
 
     },
-    currentType: 'pop'
+    currentType: 'pop',
+    showBackTop: false,
+    isTabFixed: false,
   },
 
   /**
@@ -93,5 +97,17 @@ Page({
   },
   onShareAppMessage() {
     
+  },
+
+
+  onPageScroll(options) {
+    const { scrollTop } = options
+    const flag = scrollTop >= TOP_DISTANCE
+    if(flag != this.data.showBackTop) {
+      this.setData({
+        showBackTop: flag
+      })
+    }
+
   }
 })

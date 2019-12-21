@@ -1,0 +1,4 @@
+<!--components/w-content/w-content.wxml-->
+<scroll-view class="content" scroll-y>
+  
+</scroll-view>

@@ -6,3 +6,7 @@
 .category w-menu {
   width: 30%;
 }
+
+.category w-content {
+  width: 70%;
+}

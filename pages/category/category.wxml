@@ -4,4 +4,12 @@
     categories="{{categories}}"
     bind:menuClick="handleMenuClick"
   />
+
+  <w-content 
+    subcategories="{{categoryData[currentIndex].subcategories}}" 
+    categoryDetail="{{categoryData[currentIndex].categoryDetail}}"
+  />
+  <!-- <view wx:for="{{categoryData[currentIndex].subcategories}}">{{item.title}}</view> -->
+
+
 </view>

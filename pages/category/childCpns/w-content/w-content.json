@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "w-goods": "/components/w-goods/w-goods"
+  }
 }

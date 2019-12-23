@@ -16,3 +16,14 @@ export function getSubcategory(maitKey) {
     }
   })
 }
+
+
+export function getCategoryDetail(miniWallkey, type) {
+  return request({
+    url: oldBaseURL + '/api/v2/subcategory/detail',
+    data: {
+      miniWallkey,
+      type
+    }
+  })
+}
